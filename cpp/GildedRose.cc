@@ -69,7 +69,7 @@ void GildedRose::updateQuality()
                 }
                 else
                 {
-                    items[i].quality = items[i].quality - items[i].quality;
+                    items[i].quality --;
                 }
             }
             else
