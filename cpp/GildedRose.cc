@@ -17,7 +17,7 @@ void GildedRose::updateQuality()
             {
                 if (items[i].name != "Sulfuras, Hand of Ragnaros")
                 {
-                    items[i].quality = items[i].quality - 1;
+                    items[i].quality--;
                 }
             }
         }
@@ -25,7 +25,7 @@ void GildedRose::updateQuality()
         {
             if (items[i].quality < 50)
             {
-                items[i].quality = items[i].quality + 1;
+                items[i].quality++;
 
                 if (items[i].name == "Backstage passes to a TAFKAL80ETC concert")
                 {
@@ -33,7 +33,7 @@ void GildedRose::updateQuality()
                     {
                         if (items[i].quality < 50)
                         {
-                            items[i].quality = items[i].quality + 1;
+                            items[i].quality++;
                         }
                     }
 
@@ -41,7 +41,7 @@ void GildedRose::updateQuality()
                     {
                         if (items[i].quality < 50)
                         {
-                            items[i].quality = items[i].quality + 1;
+                            items[i].quality++;
                         }
                     }
                 }
@@ -50,7 +50,7 @@ void GildedRose::updateQuality()
 
         if (items[i].name != "Sulfuras, Hand of Ragnaros")
         {
-            items[i].sellIn = items[i].sellIn - 1;
+            items[i].sellIn --;
         }
 
         if (items[i].sellIn < 0)
@@ -63,7 +63,7 @@ void GildedRose::updateQuality()
                     {
                         if (items[i].name != "Sulfuras, Hand of Ragnaros")
                         {
-                            items[i].quality = items[i].quality - 1;
+                            items[i].quality --;
                         }
                     }
                 }
@@ -76,7 +76,7 @@ void GildedRose::updateQuality()
             {
                 if (items[i].quality < 50)
                 {
-                    items[i].quality = items[i].quality + 1;
+                    items[i].quality++;
                 }
             }
         }
